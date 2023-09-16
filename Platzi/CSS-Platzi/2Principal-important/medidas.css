@@ -1,0 +1,111 @@
+*{                              /*! COLOAR SIEMPRE */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    background-color: lightgray;
+}
+
+/** EM  */
+
+
+.em > p{
+    font-size: 1.7em;     /*? El <p> tiene 16px y lo multiplica por 1.7 = 27.2px */
+}
+
+
+/**  vw, vh, max-min/width  */
+
+
+/* vw,vh= se refiere al tamaño de la pantalla en sí*/
+
+main{
+    width: 50vw;        /*? Se refiere al ANCHO de la pantalla que va a ocupar, mitad pantalla horizontal */
+    height: 100vh;       /*? Se refiere al ALTO de la pantalla que va a ocupar, todo azul em vertical*/
+    background-color: lightblue;
+}
+
+/* % = Usa el porcentaje del tamaño de su contenedor padre.
+EJE: el fondo de la pagina es azul y hay un div-width: 50%; ese div va a usar el 50% del fondo de la pagina */
+
+.section1{     /*? El SECTION esta USANDO el 80% de su contenedor PADRE(MAIN) */
+    width: 80%;
+    height: 500px;
+    background-color: red;
+    margin: auto;                /* centrar un elemento */
+}
+
+
+/**  min-max-width: determina la anchura minima/maxima de un elemento, por ejemplo un div de 40px no puede ser menor*/
+/**  min-max-height: determinar lo mismo que min-max pero con el alto 
+
+
+/*! POSITIONS: static, absolute, relative, fixed, sticky.  IMPORTANTE */
+
+/*static: por defecto */
+
+.contenedor-padre{
+    border: 2px dotted black;
+    display: inline-block;
+    margin: 250px auto;
+}
+
+.box{
+    display: inline-block;
+    background-color: lightgreen;
+    width: 100px;
+    height: 100px;
+}
+
+#two{
+    background-color: green;   /*Color verde las segunda caja*/
+/* absolute: pierde la posición en la que estaba, se reacomoda y se puede mover encima de los demás (superponer)*/
+    position: absolute;
+}
+
+/**Absolute: Permanecen en la posición de donde fueron colocados pero pierden su espacio físico (se sobreponen a los elementos que ocupan dicho espacio), se los puede posicionar mediante las propiedades top, right, bottom y left.
+/**Importante: Al aplicar (top, right, bottom, left) se tomará de referencia al contenedor más cercano con posición relativa.
+/**Relative: Conservan su posición original y espacio físico pero se los puede posicionar mediante las propiedades top, right, bottom y left sin perder dicho espacio físico.
+/**Fixed: Pierden su espacio físico y permanecen de forma fija (siguen el scroll, se colocan al lado izquierdo del viewport), se los puede posicionar mediante las propiedades de top, right, bottom y left.
+/**Sticky: Conservan su espacio físico pero cuando el scroll los alcanza lo siguen (sin perder dicho espacio físico), es muy usado para barras de navegación y se lo puede posicionar con las propiedades top, right, bottom y left.*/ 
+
+
+/*? DISPLAY: FLEX; */
+
+.container{   /* Contenedor principal */
+    border: 8px solid black;
+    display: flex;                     /*se ponen en fila todos los divs*/
+    flex-direction: column-reverse;    /*Le digo que la dirección es en columna y en reversa a como lo puse en el html*/
+}
+
+
+.caja{
+    width: 100px;
+    height: 100px;
+}
+
+.box1{
+    background-color: aquamarine;
+}
+
+.box2{
+    background-color: khaki;
+}
+
+.box3{
+    background-color: brown;
+}
+
+.box4{
+    background-color: lightskyblue;
+}
+
+.box5{
+    background-color: darkviolet;
+}
+
+.box6{
+    background-color: blue;
+}

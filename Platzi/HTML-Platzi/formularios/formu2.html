@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+  <!--? LISTAS -->
+
+
+  <h1> Select forma 1</h1>   <!--? Seleccionar un cosa entre varias-->
+
+  <select name="" id="">       <!--! se usa cuando hallan pocas opciones-->
+    <option value=""> Java</option>                  <!--option = Son las opciones que existen dentro de select-->
+    <option value=""> PHP</option>
+    <option value=""> Rust</option>
+  </select>
+
+  <h1> Forma 2 select con busqueda</h1>   <!--! se usa cuando hay muchas opciones-->
+
+  <input list="cursos">            <!-- input: va a crear una lista con el id cursos -->
+  <datalist id="cursos">           <!--datalist: datos que contiene la lista, id el mismo que el input -->
+    <option value="Javascript"></option>
+    <option value="PHP"></option>
+    <option value="Rust"></option>
+  </datalist>
+  <br><br>
+
+  <!--?  input type="submit" vs button  -->
+
+  <!--! Type submit-->        value: nombre que le damos al boton
+  <input type="submit" value="Enviar">    <!--! SOLO SE USA EN LOS FORMULARIOS-->
+
+  <!--! button-->
+  <button>Enviar</button>    <!--! se puede usar en cualquier otra cosa de nuestro proyecto-->
+
+
+</body>
+</html>

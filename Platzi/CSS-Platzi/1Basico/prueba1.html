@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="/CSS-Platzi/prueba1.css"> <!-- Relacionar css con html-->
+</head>
+<body>
+
+
+    <!--!    LINK MAS INFO:  https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes      -->
+    <!--!                    https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-elements     -->
+
+
+    <h1 id="title">Empezando con CSS</h1>   <!-- ID -->
+
+    <p class="parrafo1"> Parrafo con class</p>
+
+    <header>
+        <nav>
+            <ul class="main_nav">          <!-- Se le coloca una clase al total ul-->
+                <li class="main_nav__item"><a href="">Home</li>
+                <li class="main_nav__item"><a href="">Shop</li> <!--Se le asigna una clase específica a las opciones-->
+                <li class="main_nav__item"><a href="">Account</li>
+                <li class="main_nav__item"><a href="">Carrito</li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <h1 id="titulo" class="titulos-pagina"> Ejemplo orden de especifidad </h1>
+
+    <nav>
+        <ul class="lista">
+            <li class="elementos-lista"><a href="">Home</a></li>
+            <li class="elementos-lista"><a href="">Cursos</a></li>
+            <li class="elementos-lista"><a href="">Instructores</a></li>
+            <li class="elementos-lista" id="info"><a href="">Info</a></li>
+        </ul>
+    </nav>
+
+
+    <h1 class="titulos-pagina"> Combinadores </h1>
+
+    <h2> Combinador num.1 </h2>
+    <h3> Combinador num.2 </h3>
+    <h4> Combinador num.3 </h4>
+    <h5> Combinador num.4 </h5>
+
+    <div>
+        <article>
+            <p>Soy un texto de forma hija dentro de un div</p>
+        </article>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Send Email</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<style>
+  :root{
+    --fosforescente: #41D3BD;
+    --beige: #FFFFF2;
+    --morado: #791E94;
+    --naranja:#DE6449;
+    --azul:#407899;
+  }
+  .contenedor{
+    width: 320px;
+    margin: 80px 470px;
+    height: 420px;
+  }
+
+  img{
+
+    width: 120px;
+    margin: auto 60px;
+    height: 110px;
+  }
+
+  h3{
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+  }
+
+  .mintext{
+    font-weight: 100;
+    color: var(--azul);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    text-align:center
+  }
+
+  .icon{
+    margin: 30px 60px
+  }
+
+  .btn{
+    background-color: rgba(64, 120, 153,.4);
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    border: none;
+    border-radius: 10px;
+    width: 270px;
+    margin: -19px 25px;
+    height: 30px;
+    font-weight: 800;
+    cursor: pointer;
+   }
+
+   .btn:hover{
+    background-color: #285874;
+    border:none;
+   }
+    .more{
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 300;
+      font-size: 15px;
+      margin: 30px 20px
+    }
+
+    span{
+      color: #407899;
+      font-weight: 500;
+      cursor: pointer;
+    }
+  
+  
+</style>
+
+
+
+<body>
+    
+  <div class="contenedor">
+
+    <div class="logo">
+      <figure>
+        <img src="/3.Ejercicio/Resources/yeezy2.png">
+      </figure>
+    </div>
+
+
+    <div class="text">
+
+      <h3> Email enviado! </h3>
+      <p class="mintext">Por favor echa un vistazo a las instrucciones<br>para poder cambiar tu contraseña</p>
+    
+    </div>
+
+    <div class="icon">
+      <figure><svg xmlns="http://www.w3.org/2000/svg" width="auto" height="60" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16" >
+        <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/></svg>
+      </figure>
+    </div>
+    
+
+    <button class="btn"> Enviar </button>
+
+    <p class="more">No haz recibido el email? <span> haz click aquí</span></p>
+
+  </div>
+
+</body>
+</html>

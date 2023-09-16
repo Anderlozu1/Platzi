@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+  <h1> Formularios </h1>
+
+  <form>    <!-- Crear formulario -->
+    <label for="nombre">                    <!-- for = El mismo que ID-->
+      <p>¿Cual es tu nombre?</p>
+      <input type="text" id="nombre" />      <!-- Type = texto para escribir, id para identificarlo-->
+    </label>
+  
+
+    
+    <label for="inicio-platzi">                     
+      <p>Fecha de inicio en platzi</p>
+      <input type="date" id="inicio-platzi" />      <!-- date = elegir fecha -->
+    </label>
+  
+  
+    <label for="tiempo-estudio">                  
+      <p>Tiempo de estudio diario platzi</p>
+      <input type="number" id="tiempo-estudio" min="1" max="24" />  <!-- number = solo números-->   
+    </label>
+
+
+    <label for="hora-estudio">                  
+      <p>Hora en la que estudias</p>
+      <input type="time" id="hora-estudio" />  <!-- time = seleccionar hora del dia -->   
+    </label>
+
+    <br> <br>
+
+
+  <!--? CALENDARIO -->
+
+
+  <h1> Calendario forma optimizada </h1> <br><br>
+
+
+    <label for="calendario">
+      <span>Calendario</span>              <!--?datetime-local coloca todo en una sola línea-->
+      <input type="datetime-local" id="calendario" name="calendario"> 
+    </label>
+
+    <br><br><br>
+
+
+  <!--? AUTOCOMPLETADO Y REQUERIMIENTOS-->
+
+
+  <h1> Autocomplete y requerimientos </h1>
+
+
+  <!--? autocomplete="". Se autocompleten las cosas: con el valor indicado-->
+  <!--? required.        Es obligatorio que el usuario rellene esos campos-->
+  <!-- Los valores que se pueden autocompletar estan en: -->
+  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete"> Autocomplete</a>
+
+
+    <label for="nombres">
+      <p>Nombre</p>
+      <input type="text" id="nombres", name="nombres" autocomplete="name" required>  
+    </label>
+
+    <label for="cp">
+      <p>Codigo postal:</p>
+      <input type="number" id="cp", name="cp" autocomplete="postal-code" required>
+    </label>
+
+    <label for="correo">
+      <p>Email:</p>
+      <input type="email" id="correo", name="correo" autocomplete="email" required>
+    </label>
+
+    <label for="pais">
+      <p>Pais</p>
+      <input type="text" id="pais", name="pais" autocomplete="country" required>
+    </label>
+
+    <input type="submit">
+
+</body>
+</html>

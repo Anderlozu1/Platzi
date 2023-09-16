@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<style>
+   :root{
+    --fosforescente: #41D3BD;
+    --beige: #FFFFF2;
+    --morado: #791E94;
+    --naranja:#DE6449;
+    --azul:#407899;
+  }
+
+  .contenedor{
+    width: 320px;
+    margin: 80px 470px;
+    height: 420px;
+  }
+
+  img{
+    width: 120px;
+    margin: auto 60px;
+    height: 110px;
+  }
+
+  label{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    margin-left: 22px;
+  }
+
+  .inputs{
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128,.1);
+    margin: 8px 22px;
+    width: 270px;
+    height: 30px;
+  }
+
+  #loginbtn{
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(64, 120, 153,.4);
+    font-family: 'Quicksand', sans-serif;
+    width: 270px;
+    height: 30px;
+    font-weight: 700;
+    color: white;
+    margin: 15px 22px;
+  }
+
+  .pswdbtn{
+    color: #407899;
+    background-color: white;
+    border: none;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 12px;
+    margin: 1px 82px;
+  }
+
+  .signupbtn{
+    color:rgba(64, 120, 153,.4);
+    background-color: white;
+    border-color: #407899;
+    width: 270px;
+    height: 30px;
+    border: solid;
+    border-radius: 10px;
+    margin: 40px 20px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+  }
+
+</style>
+
+<body>
+
+  <div class="contenedor">
+      <div class="imagen">
+        <figure>
+          <img src="/3.Ejercicio/Resources/yeezy2.png">
+        </figure>
+      </div>
+
+
+      <div> 
+
+        <form>
+          <label for="email">Direccion email</label><br>
+          <input id="email" placeholder="example@email.com" type="email" class="inputs"><br>
+
+          <label for="pswd"> Contraseña</label><br>
+          <input id="pswd" placeholder="**********" type="password" class="inputs"><br>
+
+          <input type="submit" id="loginbtn" value="Iniciar sesión"><br>
+        </form>
+
+        <button class="pswdbtn">Recuperar mi contraseña</button><br>
+
+        <button class="signupbtn">Únete</button>
+        
+      </div>
+
+
+  </div>
+    
+</body>
+</html>

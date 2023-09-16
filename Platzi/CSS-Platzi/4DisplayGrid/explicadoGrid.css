@@ -1,0 +1,124 @@
+/*! Propiedades BASICAS */
+
+    /*! display: grid    =  Activar GRID                  COLUMNA = ANCHO   FILAS = LARGO
+
+/*? CREAR FILAS Y COLUMNAS */
+
+    /** grid-template-column: 120px = Se crea una columna, y todas ellas van a tener 120 px */
+
+    /** grid-auto-column: 120px     =  Todas las celdas que se ubiquen en la columna 1, van a tener un tamaño de 120px */
+
+    /** grid-template-row: 50px     =  Se crea una fila, y todas ellas que se encuentren ahi van a tener 50px */
+
+    /** grid-auto-row: 50px         =   Cada una fila que se cree va que se ubique allí va a tener 50px de largo
+    
+
+/*? SEPARAR FILAS Y COLUMNAS */
+
+    /** row-gap: 10px               = Separa 10px entre CADA FILA */
+
+    /** column-gap: 10px            = Separa 10px entre CADA COLUMNA */
+
+    /** gap: 10px                   = separa 10px ENTRE FILAS Y COLUMNAS */
+
+
+/*! ALINEACIÓN */
+
+
+    /*? ALINEAR ITEMS (contenido de la celda)*/
+
+        /** justify-items: ;           =    (HORIZONTAL)  */
+
+        /** align-items: ;             =    (VERTICAL)  */
+
+        /** place-items: ;             =    (HORIZONTAL Y VERTICAL)  */
+
+
+    /*? ALINEAR CONTENEDOR (alineamiento de las CELDAS con respecto al contenedor) */
+
+
+        /** justify-content: ;         =    (HORIZONTAL)  */
+
+        /** align-content: ;           =    (VERTICAL)  */
+
+        /** place-content: ;             =    (HORIZONTAL Y VERTICAL) */
+
+
+    /*? ALINEACIÓN DEL ITEM   (DE UN ITEM EN INDIVIDUAL) */
+
+        /** justify-self: ;            =    (HORIZONTAL) */
+
+        /** align-self: ;              =    (VERTICAL) */
+
+        /** place-self: ;              =    (HORIZONTAL Y VERTICAL) */
+
+
+/*! CAMBIAR ESPACIO DE UNA CELDA  (QUE CUBRA MAS ESPACIO O MENOS) */
+
+    
+    /*? COLUMNAS */
+
+        /** grid-column-start: ;       =    Indica el INICIO de la columna, en que LINEA DE COLUMNA DEBE EMPEZAR  */
+
+        /** grid-column-end: ;         =    Indica el FINAL de la columna, en que LINEA DE COLUMNA DEBE FINAL   */
+
+        /*todo  grid-column: start / end;     :2 / 3 / 3 / 2          
+
+    /*? FILAS */
+
+        /** grid-row-start: ;          =     Indica el INICIO de la fila, en que LINEA DE FILA DEBE EMPEZAR    */
+
+        /** grid-row-end: ;            =     Indica el FINAL de la fila, en que LINEA DE FILA DEBE TERMINAR     */
+
+        /*todo  grid-row: start / end;
+
+
+    /* grid-area: indicar como va a EMPEZAR en COLUMNA Y FILA, y como va a TERMINAR en COLUMNA y FILA, dar nombres */
+
+        /* grid-area: fila-comienza / columna-comienza / fila-termina / columna termina:    grid-area: 2 / 2 / 4 / 4
+
+
+        /*? Se declara en el contenedor:        grid-area: ubicacion de cada uno de los elementos:
+
+            "header header header"         y para aplica escribiendo en el la celda su nombre: grid-area: header
+            "nav main main"
+            "nav main main" 
+
+
+/*! FUNCIONES ESPECIALES */
+
+    /**     minmax:  Ayuda a declarar el TAMAÑO MINIMO Y MAXIMO para el ancho y alto de una celda     */
+    /*      SIRVE PARA AJUSTAR EL CONTENIDO PARA QUE NO SE SALGA DEL CONTENEDOR                  */
+
+    /* grid-template-columns: minmax(tamaño minimo, tamaño maximo)
+
+
+    /**     repeat: Repite el mismo dato/valor a cierto tipo */
+
+    /* grid-template-rows: repeat(3, 100px) */ /*? En vez de colocar 100px 100px 100px, dice que hay 3 filas de 100px */
+
+    /* repeat(3, auto)  /*! Se crean 3 filas, que se AJUSTAN AL TAMAÑO DEL CONTENIDO */
+
+
+/*! KEYWORDS ESPECIALES    */
+
+    /**    1fr = Ajusta el contenido a su tamaño, representa una fraccion del total de columnas o filas
+    /*       y ajusta el ancho y alto de las filas y columnas, SE AJUSTA SEGUN EL TAMAÑO DE PANTALLA                                    */
+
+    /**  min-content = Ajusta al TAMAÑO MINIMO, según lo que OCUPE EL CONTENIDO, siempre esta estático */
+
+    /** max-content = Ajusta al TAMAÑO MAXIMO, para que su CONTENIDO OCUPE EN UNA SOLA LÍNEA, mantiene su ancho max  */
+
+    
+/*? auto-fit 
+
+    /** auto-fit: Ensancha las columnas PARA QUE OCUPEN TODO EL ESPACIO DEL CONTENIDO  (SE RELLENA)
+        /*? que TODO el tamaño de los divs, se repartan en todo el renglón 
+
+        grid-template-columns: repeat(auto-fit, 1fr) /*! SIEMPRE TIENE QUE SER fr para que se ajuste completo */
+
+/*? auto-fill 
+
+    /** auto-fill : Agrega columnas “fantasma” que rellenan el espacio sobrante del contenedor. (QUEDA VACIO)
+
+    grid-template-columns: repeat(auto-fill, 1fr)

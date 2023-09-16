@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+
+<style>
+
+    body{      /* PARA QUE EL SE APLIQUE*/
+        font-family: 'Quicksand', sans-serif;
+        margin: 0;
+    } 
+
+    .menu{
+      display: none;
+    }
+
+    .logo{
+      width: 120px;
+      height: 90px;
+    }
+
+    .navbar-left ul, .navbar-right ul{
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar-right ul{
+      margin-top: 35px;
+    }
+
+    .navbar-left{
+      display: flex;
+    }
+
+    .navbar-left ul{
+      margin-left: 12px;
+    }
+
+    .navbar-left ul li a, .navbar-right ul li a{
+      text-decoration: none;
+      color: #791E94;
+      border: 1px solid whitesmoke;
+      padding: 8px
+    }
+
+    .navbar-left ul li a:hover, .navbar-right ul li a:hover{
+      border:#791E94 solid 1px;
+      border-radius: 9px;
+    }
+
+    nav{
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      margin: -10px
+    }
+
+    .navbar-email div{
+      color: #791E94;
+      font-size: 15px;
+    }
+
+    .navbar-email{
+      margin-right: 15px;
+    }
+
+    .navbar-shopping-cart{
+      position: relative;
+    }
+
+
+    .navbar-shopping-cart div{
+      width: 11px;
+      height: 11px;
+      background-color: hsla(286, 66%, 35%,.2);
+      border-radius: 60%;
+      font-size: 10px;
+      font-weight: bold;
+      position: absolute;
+      top: -8px;
+      right: -2px;
+      display: flex;
+      justify-content: center;
+    }
+</style>
+
+<body>
+  <nav>
+    <svg xmlns="http://www.w3.org/2000/svg"  class="menu" alt="icon-menu" width="16" height="16" fill="currentColor" class="bi bi-filter-left" viewBox="0 0 16 16">
+      <path d="M2 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+    </svg>
+
+      <div class="navbar-left">
+        <img src="/3.Ejercicio/Resources/yeezy2.png" class="logo">
+      
+
+        <ul>
+
+          <li>
+            <a href="/">Todo</a>
+          </li>
+
+          <li>
+            <a href="/">Ropa</a>
+          </li>
+
+          <li>
+            <a href="/">Electronica</a>
+          </li>
+
+          <li>
+            <a href="/">Furnis</a>
+          </li>
+
+          <li>
+            <a href="/">Otros</a>
+          </li>
+
+        </ul>
+      </div>
+
+
+      <div class="navbar-right">
+
+        <ul>
+
+          <li class="navbar-email">platzi@example.com</li>
+
+          <li class="navbar-shopping-cart">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16" alt="shopping-cart">
+              <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+            </svg>
+
+            <div>2</div>
+
+          </li>
+
+        </ul>
+
+      </div>
+
+      
+    </nav>
+</body>
+</html>

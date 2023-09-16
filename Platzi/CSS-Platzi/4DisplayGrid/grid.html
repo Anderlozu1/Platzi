@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Display Grid</title>
+</head>
+<body>
+
+  <style>
+    .contenedor{
+      background-color:lightcoral;
+      border: 5px solid lightgreen;
+      display: grid;                       /* COLUMNAS: INTERPRETA EL ANCHO DE LA CELDA, FILAS: EL LARGO DE LA CELDA*/
+
+                                          /*  se aplica solo a las primeras filas */
+      grid-template-rows: 100px 200px;    /* FILAS: Se crean 2 filas, la 1ra fila se crea de 100 y la 2da de 200*/
+    
+      grid-auto-columns: 100px;            /* Cada NUEVA CELDA, va a tener una columna de 100px AUTOMATICAMENTE */
+
+      /*grid-template-columns: 120px 240px;  COLUMNAS: Se crean 2 columnas, la 1ra de 120 y la 2da de 240*/
+
+      /*grid-auto-rows: 150px;            cada fila que este O QUE SE AÑADA VA A TENER 150PX de LARGO*/
+
+      grid-auto-flow: column;
+
+      row-gap: 15px;                  /* el ESPACIO QUE SE CREA ENTRE CADA FILA, SOLO LO QUE HAY DENTRO DEL CONTENEDOR*/
+
+      column-gap: 15px;              /* el ESPACIO QUE SE CREA ENTRE CADA COLUMNA */
+
+      gap: 15px;                      /*El mismo tamaño de distancia de columna y filas "row-gap y column-gap" */
+    }
+
+    .item{
+      border: 5px solid #00bcd4;
+      font-size: 4rem
+    }
+  </style>
+
+  <div class="contenedor">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+  </div>
+    
+</body>
+</html>

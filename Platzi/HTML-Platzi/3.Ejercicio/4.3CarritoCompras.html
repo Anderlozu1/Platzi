@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito Compras</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<style>
+  :root{
+        --fosforescente: #41D3BD;
+        --beige: #FFFFF2;
+        --morado: #791E94;
+        --naranja:#DE6449;
+        --azul:#407899;
+    }
+
+    body{      /* PARA QUE EL SE APLIQUE*/
+        font-family: 'Quicksand', sans-serif;
+    }
+
+    .product-detail {
+      width: 360px;
+      padding: 24px;
+      box-sizing: border-box;
+      position: absolute;
+      right: 0;
+    }
+    .title-container {
+      display: flex;
+    }
+    .title-container img {
+      transform: rotate(180deg);
+      margin-right: 14px;
+    }
+    .title {
+      font-size: 25px;
+      font-weight: bold;
+    }
+    .order {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 16px;
+      align-items: center;
+      background-color: var(--text-input-field);
+      margin-bottom: 24px;
+      border-radius: 8px;
+      padding: 0 24px;
+    }
+    .order p:nth-child(1) {
+      display: flex;
+      flex-direction: column;
+    }
+    .order p span:nth-child(1) {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .order p:nth-child(2) {
+      text-align: end;
+      font-weight: bold;
+    }
+    .shopping-cart {
+      display: grid;
+      grid-template-columns: auto 1fr auto auto;
+      gap: 16px;
+      margin-bottom: 24px;
+      align-items: center;
+    }
+    .shopping-cart figure {
+      margin: 0;
+    }
+    .shopping-cart figure img {
+      width: 70px;
+      height: 70px;
+      border-radius: 20px;
+      object-fit: cover;
+    }
+    .shopping-cart p:nth-child(2) {
+      color: var(--morado);
+    }
+    .shopping-cart p:nth-child(3) {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .primary-button {
+      background-color: var(--hospital-green);
+      border-radius: 8px;
+      border: none;
+      color: var(--beige);
+      width: 100%;
+      cursor: pointer;
+      font-size: 20px;
+      font-weight: bold;
+      height: 50px;
+    }
+    @media (max-width: 640px) {
+      .product-detail {
+        width: 100%;
+      }
+    }
+</style>
+
+<body>
+
+  <aside class="product-detail">
+    <div class="title-container">
+      <svg xmlns="http://www.w3.org/2000/svg"  class="menu" alt="icon-menu" width="16" height="16" fill="currentColor" class="bi bi-filter-left" viewBox="0 0 16 16">
+        <path d="M2 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+      </svg>
+      <p class="title">Mis ordenes</p>
+    </div>
+
+    <div class="my-order-content">
+      
+      <div class="shopping-cart">
+        <figure>
+          <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="bike">
+        </figure>
+        <p>Bike</p>
+        <p>$30,00</p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+        </svg>
+      </div>
+      
+      <button class="primary-button">
+        Checkout
+      </button>
+    </div>
+  </div>
+  </aside>
+
+</body>
+</html>

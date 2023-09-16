@@ -1,0 +1,124 @@
+/*! SIEMPRE PONER */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/**    ID   */
+
+#title{
+    color: red;
+}
+
+/**    CLASS  */
+
+.parrafo1{
+    color: blue;
+}
+
+
+
+/**  Pseudo-clase            Se le agrega : , define el estilo de un estado, como cambiar de color */
+
+
+.main_nav{             /* Se dirije a la lista tota */
+    margin-top: 40px;
+    background-color: rgba(181, 88, 88,.3);
+}
+
+.main_nav__item{       /* Se dirije a cada elemento dentro de la lista*/
+    display: inline-block;
+}
+
+.main_nav__item a{    /* Se dirije al link que hay dentro de cada elemento de la lista*/
+    color: white;      /* El color del link lo cambia a blanco */
+    padding-left: 5px;
+    border-radius: 9px;
+    text-decoration: none;
+    background-color:brown;
+}
+
+.main_nav__item a:hover{   /*Cuando se pasa el cursor por encima del link se cambia el color a rojo*/
+    color: red;        
+}
+
+.main_nav__item a:active{   /*Cambia a verde cuando se tiene presionado el link*/
+    color: green;
+}
+
+
+/** Pseudo elementos       Se le agregan 2 :: , estilo de una parte específica del elemento, como después de aquello */      
+
+
+
+.main_nav__item a::after{   /*Después de cada elemento de la lista, va a ir el contenido  "-" para separarlos */
+    content: " - ";        
+}
+
+
+
+/*! ORDEN IMPORTANCIA CSS: !important, estilos en línea, #id, .class, tag  */
+
+
+#titulo{           /*? SOLO el id titulo va a tener el color rojizo y el estilo de letra*/
+    font-family: Impact;
+    color: lightcoral;
+}
+
+.titulos-pagina{            /*? TODOS los titulos con esta clase, su fondo va a ser beige*/
+    background-color: bisque;
+    text-align: center;
+}
+
+
+.lista{
+    background-color: white; 
+    list-style-type: circle;                /* Estilo de numeración de lista decimal */
+}
+
+.elementos-lista {
+    display: inline-block;
+    margin: 6px 15px;
+    background-color: lightskyblue;
+    padding: 8px 14px;
+    border-radius: 7px;
+    
+}
+
+.elementos-lista a{
+    text-decoration: none;
+}
+
+#info {
+    color: green;
+    background-color: rgba(91, 122, 73,.4);
+}
+
+#info a{
+    color:red;
+}
+
+
+
+/*?    COMBINADORES    */
+
+
+h2 + h3{             /* Se cambian a rojo los elementos h3 que estén cerca de h2*/
+    color: red;
+}
+
+h4 ~ h5{             /* Se dirije a los h5 que están dentro o en el mismo contenedor de h4 */
+    color:green;
+}
+
+article > p{         /*Se configura la etiqueta parrafo que este dentro de una etiqueta article */
+    color: rebeccapurple;
+    font-size: 32px;
+}
+
+
+
+
+
+

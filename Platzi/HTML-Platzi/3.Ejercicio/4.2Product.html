@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<style>
+
+  body{
+    font-family: 'Quicksand', sans-serif;
+  }
+
+  .primary-button{
+    background-color: hsla(286, 66%, 35%,.2);
+    border-radius: 8px;
+    border: none;
+    color: white;
+    width: 100%;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    height: 50px;
+  }
+
+  .add-to-car-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .product-detail{
+    width: 360px;
+    padding-bottom: 24px;
+    position: absolute;
+    right: 0;
+  }
+
+  .product-detail-close{
+    background-color: whitesmoke;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    z-index: 2;
+    padding: 12px;
+    border-radius: 50%;
+
+  }
+
+  .product-detail-close svg:hover{
+    cursor: pointer;
+  }
+
+  .product-detail > img:nth-child(2){
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 0 0 20px 20px;
+  }
+
+  .product-info{
+    margin: 24px 24px 0 24px;
+  }
+
+  .product-info p:nth-child(1){
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 4px;
+    
+  }
+
+  .product-info p:nth-child(2){
+    color: rgb(121, 117, 117);
+    font-size: 10px;
+    margin-top: 0;
+    margin-bottom: 36px;
+  }
+
+  .product-info p:nth-child(3){
+    color: rgb(121, 117, 117);
+    font-size: 10px;
+    margin-top: 0;
+    margin-bottom: 36px;
+  }
+
+  .t{
+    font-size: 12px;
+    margin-bottom: 19px;
+    color: rgb(121, 117, 117)
+  }
+</style>
+
+<body>
+    
+  <aside class="product-detail">
+
+  <div class="product-detail-close">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+    </svg>
+  </div>  
+    <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="foto">
+    
+    <h2>$ 280000</h2>
+    <p>Bicicleta</p>
+    <p class="t">Maxime tempore qui facilis quisquam iste sapiente omnis distinctio delectus earum ab laudantium ipsum blanditiis modi illum a aperiam alias, nemo dolorum.</p>
+  
+    <button class="primary-button add-to-car-button"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16" alt="shopping-cart">
+      <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+    </svg> Añadir al carrito </button>
+  </aside>
+</body>
+
+</html>

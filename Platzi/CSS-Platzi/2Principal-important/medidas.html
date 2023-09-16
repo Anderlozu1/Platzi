@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="medidas.css">
+</head>
+<body>
+
+<!--? MEDIDAS -->
+
+    <main>
+        <h1> Medida EM </h1>
+
+            <div class="em">
+                 <p>Soy un texto de ejemplo</p>
+            </div>
+
+        <h1> Medida min-max/width</h1>
+
+            <section class="section1"></section>
+    </main>
+
+
+<!--? POSITION,                        todos los divs van a tener la clase-->
+
+    
+    <h1> Positions: static, absolute, relative, fixed, sticky</h1>
+    <div class="contenedor-padre">
+        <div class="box" id="one">Uno</div>
+        <div class="box" id="two">Dos</div>
+        <div class="box" id="three">Tres</div>
+        <div class="box" id="four">Cuatro</div>
+    </div>
+
+
+<!--? DISPLAY,   block, inline, inline-block -->
+
+
+<!--* BLOCK -->
+
+    <div>
+        <p>Parrafo1</p>    <!-- una etiqueta con block ocupa todo el width del renglon-->
+        <p>Parrafo2</p>    <!--! ocupa toda la línea   -->
+    </div>
+
+<!--* Inline -->
+
+    <div>
+        <p>Parrafo1</p> <p>Parrafo2</p>  <!--inline: al cambiarlo, muestras los elementos en un solo renglon-->
+    </div>                               <!--! no se puede poner margin ni padding arriba u abajo ni width ni height-->
+
+<!--* Inline-block -->
+
+    <ul>
+        <li>Home</li>         <!--Los elementos todavía OCUPAN TODA EL RENGLON pero se les puede cambiar-->
+        <li>Cursos</li>       <!--! margin, padding, width, height-->
+        <li>Instructores</li>
+        <li>Otro</li>
+    </ul>
+
+
+<!--? DISPLAY: FLEX-->
+
+    <h1> FLEX </h1>
+
+    <div class="container">    <!--DISPLAY: FLEX; SIEMPRE DEBE TENER UN CONTENEDOR PADRE-->
+        <div class="caja box1"><p>Micaja1</p></div>
+        <div class="caja box2"><p>Micaja2</p></div>
+        <div class="caja box3"><p>Micaja3</p></div>
+        <div class="caja box4"><p>Micaja4</p></div>
+        <div class="caja box5"><p>Micaja5</p></div>
+        <div class="caja box6"><p>Micaja6</p></div>
+    </div>
+</body>
+</html>

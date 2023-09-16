@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid area</title>
+
+    <style>
+
+        .contenedor{
+            border: 5px solid lightpink;
+            background-color: white;
+            display: grid;
+            grid-template-columns: 150px 150px 150px;
+            grid-template-rows: 75px 75px 75px;
+            place-content: center;
+        }
+
+        .item{
+            font-size: 4rem
+        }
+
+        .item1{
+            border: 5px solid lightblue;
+            background-color: blue;
+
+            grid-column-start: 1;   /* SE TIENE EN CUENTA DESDE LA LINEA QUE EMPIEZA */
+            grid-column-end: 4;     /* LA LINEA QUE TERMINA */
+        }
+
+        .item2{
+            border: 5px solid lightcoral;
+            background-color: brown;
+
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+
+        .item3{
+            border: 5px solid lightgreen;
+            background-color: green;
+
+            grid-area: 2 / 2 / 4 / 4;         /* grid-area */
+        }
+        
+    </style>
+</head>
+
+<body>
+    
+    <div class="contenedor">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+    </div>
+</body>
+
+</html>
